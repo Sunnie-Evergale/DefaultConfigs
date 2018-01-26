@@ -7,6 +7,7 @@ Though this is not recommended as it it such a **huge waste of time** to manuall
 Create the repo in Github.com
 
 **Generate SSH in GIT bash**
+
 Replace your_email@example.com with your actual email. *Duh!*
 
 ```
@@ -16,11 +17,12 @@ Press enter here
 ```
 Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]
 ```
-Enter passphrase, like your ex-grillfriend's name perhaps. Remember the passphrase by keeping it in a safe location.
+Enter a passphrase, it's gonna be your password dummy! Remember the passphrase by keeping it in a safe location.
 ```
 Enter passphrase
 ```
 **Adding your SSH key to the ssh-agent**
+
 Ensure the ssh-agent is running
 ```
 eval $(ssh-agent -s)
@@ -34,7 +36,8 @@ Copy the SSH key to your clipboard
 clip < ~/.ssh/id_rsa.pub
 ```
 Paste in: Github > Setting > SSH
-Testing your SSH connection
+
+**Testing your SSH connection**
 ```
 ssh -T git@github.com
 ```
@@ -44,6 +47,7 @@ ssh -T git@github.com
 ## Project Folder
 
 **Initialize git**
+
 Initialize Gitbash in *local* project folder
 ```
 git init
@@ -57,15 +61,19 @@ git config user.email
 git config user.email "35815382+Sunnie-Evergale@users.noreply.github.com"
 ```
 or
+
 **Edit Git Username globally**
 ```
 global user.email "35815382+Sunnie-Evergale@users.noreply.github.com"
 ```
 **Set repo url**
+
+Get the SSH url in github and manually change to this
 ```
 git remote set-url origin ssh://git@github.com/Sunnie-Evergale/janua.git
 ```
 or
+
 **Edit git config manually**
 ```
 [remote "origin"]
@@ -78,6 +86,7 @@ or
 	merge = refs/heads/master
 ```
 **Pull**
+
 Pull the existing git repo
 ```
 git pull
@@ -88,13 +97,15 @@ git pull
 ## Extra Reading
 
 **Adding/Changing a passphrase**
+
 You can change the passphrase for an existing private key without regenerating the keypair by typing the following command:
 ```
 ssh-keygen -p
 ```
 
 **Auto-launching ssh-agent on Git for Windows**
- Copy the following lines and paste them into your **.profile** or .bashrc file in Git shell:
+
+Copy the following lines and paste them into your **.profile** or .bashrc file in Git shell:
  ```
  env=~/.ssh/agent.env
 
