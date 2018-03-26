@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "es2015-loose",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+    ["import-inspector", {
+      "serverSideRequirePath": true
+    }],
+    "transform-decorators-legacy",
+    "react-hot-loader/babel",
+    "transform-runtime",
+    "transform-object-assign",
+    "es6-promise"
+  ],
+  "compact": true
+}
+
