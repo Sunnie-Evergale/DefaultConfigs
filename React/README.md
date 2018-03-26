@@ -33,8 +33,31 @@ Install the following node mobdules globally
  - Babel ES6/ES7
  - React Redux ES6 Snippets
  - React-beautify
-Optional
+ 
+**Optional**
  - Prettier
  - Code Runner
  - Live Server
+
+## Template V3.2
+
+Major Javascript Libraries/Modules used.
+
+**ReactJs**
+
+**Redux**
+
+**Redux-Saga**
+
+**Es6**
+
+**Nodejs**
+
+**Express**
+
+**Primus.io**
+
+**React-MD**
+
+**HTML5**
 
